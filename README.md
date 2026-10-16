@@ -6,11 +6,23 @@ raw GitHub URL:
 
 ```python
 import pandas as pd
-url = "https://raw.githubusercontent.com/papayuh/datn1370-data/main/weeks/wk07-trends/data/houston_power_raw.csv"
+url = "https://raw.githubusercontent.com/papayuh/datn1370-data/main/weeks/wk07-trends/data/houston_power_monthly.csv"
 df = pd.read_csv(url)
 ```
 
 ## Files
+
+### `weeks/wk07-trends/data/houston_power_monthly.csv`
+
+Houston-area monthly electricity use and temperature, January 2018 to September
+2026 (105 rows, no blanks). Derived from `houston_power_clean.csv`: each value is
+the mean of that month's available days. Used by the Module 4 assignment.
+
+| Column | Meaning |
+|---|---|
+| `month` | text, `YYYY-MM` |
+| `avg_high_f` | average daily high at Houston Intercontinental Airport (GHCN station USW00012960), °F, one decimal |
+| `avg_load_mw` | average ERCOT Coast weather zone native load, megawatts, whole number |
 
 ### `weeks/wk07-trends/data/houston_power_raw.csv`
 
